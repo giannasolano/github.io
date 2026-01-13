@@ -1,34 +1,22 @@
- <!DOCTYPE html>
- <html>
- <head>
-     <title>Gianna Solano</title>
- </head>
- <body>
-     <h1>Comp 193</h1>
-     <p>Ray Tracing with WebGPU</p>
- </body>
- </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
 
- <button onclick="castSpell()">Click Me</button>
- <p id="spellResult"></p>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
- <link rel="stylesheet" href="style.css">
+    <h1>Your Heading</h1>
+    <p>Your short description</p>
 
- <script>
- function heavyLoop() {
-     let x = 0;
-     for (let i = 0; i < 5e7; i++) x = (x + i) | 0;
- }
+    <button onclick="castSpell()">Click Me</button>
+    <p id="spellResult"></p>
 
- function castSpell() {
-     let t1 = performance.now();
-     heavyLoop();
-     let t2 = performance.now();
-     heavyLoop();
-     let t3 = performance.now();
+    <!-- Link JavaScript -->
+    <script src="spell.js"></script>
 
-     document.getElementById("spellResult").innerText =
-       "First run: " + (t2 - t1).toFixed(1) + " ms\n" +
-       "Second run: " + (t3 - t2).toFixed(1) + " ms";
- }
- </script>
+</body>
+</html>
+
